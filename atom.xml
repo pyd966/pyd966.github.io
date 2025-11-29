@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Blog</title>
   
   
   <link href="https://pyd966.github.io/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://pyd966.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Pones</name>
     
   </author>
   
@@ -62,8 +62,17 @@
     <link href="https://pyd966.github.io/2017/05/31/about/index/"/>
     <id>https://pyd966.github.io/2017/05/31/about/index/</id>
     <published>2017-05-31T02:05:56.000Z</published>
-    <updated>2025-11-29T15:09:24.321Z</updated>
+    <updated>2025-11-29T15:25:28.882Z</updated>
     
+    <content type="html"><![CDATA[<p>知乎： <a href="https://www.zhihu.com/people/pyd-62">Pones</a></p><p>X：<a href="https://x.com/pyd966">Pones</a></p><p>github：<a href="https://github.com/pyd966">Pones</a></p><p>LinkedIn：<a href="https://www.linkedin.com/in/yiduo-pang-838659374/">Yiduo Pang</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;知乎： &lt;a href=&quot;https://www.zhihu.com/people/pyd-62&quot;&gt;Pones&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;X：&lt;a href=&quot;https://x.com/pyd966&quot;&gt;Pones&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;github：&lt;a href=&quot;http</summary>
+      
     
     
     
