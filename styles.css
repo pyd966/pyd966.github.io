@@ -1359,24 +1359,44 @@ h1 em {
 }
 
 .cv-section {
+  position: relative;
   padding: 56px 0 60px;
   border-bottom: 1px solid var(--line);
 }
 
 .cv-section-heading {
+  position: relative;
   display: grid;
-  margin-bottom: 36px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
   align-items: end;
   grid-template-columns: 88px minmax(210px, .8fr) 1fr;
   gap: 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-section-heading::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 44px;
+  height: 3px;
+  background: var(--accent);
+  content: "";
 }
 
 .cv-section-number {
+  display: grid;
+  width: 34px;
+  height: 34px;
   align-self: start;
-  padding-top: 9px;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  place-items: center;
   color: var(--accent);
   font-size: 12px;
   font-weight: 600;
+  letter-spacing: .08em;
 }
 
 .cv-section-heading h3 {
@@ -1388,20 +1408,29 @@ h1 em {
 .cv-section-heading > p {
   max-width: 470px;
   margin: 0 0 4px;
+  padding-left: 16px;
+  border-left: 1px solid var(--accent);
   color: var(--muted);
   font-size: 14px;
 }
 
 .cv-rows {
-  border-top: 1px solid var(--line);
+  border-top: 0;
 }
 
 .cv-row {
   display: grid;
-  padding: 25px 0 27px;
+  padding: 25px 14px 27px;
+  margin-inline: -14px;
   border-bottom: 1px solid var(--line);
   grid-template-columns: 150px minmax(0, 1fr);
   gap: 30px;
+  transition: background-color 180ms ease;
+}
+
+.cv-row:hover,
+.cv-award-row:hover {
+  background: color-mix(in srgb, var(--accent-soft), transparent 68%);
 }
 
 .cv-row > time,
@@ -1415,6 +1444,18 @@ h1 em {
   margin: 0 0 7px;
   color: var(--accent) !important;
   font-size: 12px !important;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.cv-row-label::before {
+  display: inline-block;
+  width: 18px;
+  height: 1px;
+  margin: 0 9px 3px 0;
+  background: var(--accent);
+  content: "";
 }
 
 .cv-row h4,
@@ -1443,15 +1484,17 @@ h1 em {
 }
 
 .cv-award-list {
-  border-top: 1px solid var(--line);
+  border-top: 0;
 }
 
 .cv-award-row {
   display: grid;
-  padding: 25px 0 27px;
+  padding: 25px 14px 27px;
+  margin-inline: -14px;
   border-bottom: 1px solid var(--line);
   grid-template-columns: 150px minmax(0, 1fr);
   gap: 30px;
+  transition: background-color 180ms ease;
 }
 
 @media (max-width: 720px) {
@@ -1461,13 +1504,13 @@ h1 em {
 
   .cv-section-heading {
     display: block;
-    margin-bottom: 28px;
+    padding-bottom: 22px;
   }
 
   .cv-section-number {
     display: block;
-    padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
   }
 
   .cv-section-heading > p {
@@ -1477,7 +1520,7 @@ h1 em {
   .cv-row,
   .cv-award-row {
     display: block;
-    padding: 22px 0 24px;
+    padding: 22px 14px 24px;
   }
 
   .cv-row > time,
