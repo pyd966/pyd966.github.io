@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#f4f1ea" />
     <title>Your Name · Computer Science</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="stylesheet" href="styles.css?v=10" />
     <script>
       const savedTheme = localStorage.getItem("theme");
       if (savedTheme === "dark" || savedTheme === "light") {
@@ -273,101 +273,59 @@
           <p>A concise record of the places, people, and opportunities that have shaped my work so far.</p>
         </div>
 
-        <div class="background-card-grid">
-          <article class="background-card experience-card" id="experience">
-            <div class="background-card-art experience-art" aria-hidden="true">
-              <span class="art-label">Experience / 01</span>
-              <span class="art-route art-route-one"></span><span class="art-route art-route-two"></span>
-              <span class="art-node art-node-one">01</span><span class="art-node art-node-two">02</span><span class="art-node art-node-three">03</span>
-              <span class="art-caption">ongoing work</span>
+        <div class="background-simple" id="experience">
+          <section class="cv-section cv-experience" aria-labelledby="experience-title">
+            <div class="cv-section-heading">
+              <span class="cv-section-number">01</span>
+              <h3 id="experience-title">Experience</h3>
+              <p>Places where I have worked with other people.</p>
             </div>
-            <div class="background-card-content">
-              <div class="background-card-top"><span class="background-card-number">01</span><span class="background-card-kicker">Practice</span></div>
-              <h3>Experience</h3>
-              <p class="background-card-intro">Places where I have worked with other people.</p>
-              <div class="background-card-list">
-                <div class="background-entry">
-                  <div class="entry-meta"><time>2026 — now</time><span>Research</span></div>
-                  <h4>Student Researcher</h4>
-                  <p>ABC Lab · Your University</p>
-                  <small>Exploring trustworthy machine learning with a small research team.</small>
-                </div>
-                <div class="background-entry">
-                  <div class="entry-meta"><time>2025 — now</time><span>Community</span></div>
-                  <h4>Developer</h4>
-                  <p>Open Source Club</p>
-                  <small>Building tools and helping other students make their first contribution.</small>
-                </div>
-                <div class="background-entry">
-                  <div class="entry-meta"><time>2025</time><span>Teaching</span></div>
-                  <h4>Peer Mentor</h4>
-                  <p>Department of Computer Science</p>
-                  <small>Supported sessions on programming fundamentals and data structures.</small>
-                </div>
-              </div>
+            <div class="cv-rows">
+              <article class="cv-row">
+                <time>2026 — now</time>
+                <div><p class="cv-row-label">Research</p><h4>Student Researcher</h4><p>ABC Lab · Your University</p><small>Exploring trustworthy machine learning with a small research team.</small></div>
+              </article>
+              <article class="cv-row">
+                <time>2025 — now</time>
+                <div><p class="cv-row-label">Community</p><h4>Developer</h4><p>Open Source Club</p><small>Building tools and helping other students make their first contribution.</small></div>
+              </article>
+              <article class="cv-row">
+                <time>2025</time>
+                <div><p class="cv-row-label">Teaching</p><h4>Peer Mentor</h4><p>Department of Computer Science</p><small>Supported sessions on programming fundamentals and data structures.</small></div>
+              </article>
             </div>
-          </article>
+          </section>
 
-          <article class="background-card education-card" id="education">
-            <div class="background-card-art education-art" aria-hidden="true">
-              <span class="art-label">Education / 02</span>
-              <span class="edu-arch"></span><span class="edu-page edu-page-one"></span><span class="edu-page edu-page-two"></span>
-              <span class="edu-dot edu-dot-one"></span><span class="edu-dot edu-dot-two"></span><span class="edu-dot edu-dot-three"></span>
-              <span class="art-caption">coursework</span>
+          <section class="cv-section" id="education" aria-labelledby="education-title">
+            <div class="cv-section-heading">
+              <span class="cv-section-number">02</span>
+              <h3 id="education-title">Education</h3>
+              <p>What I am studying and returning to often.</p>
             </div>
-            <div class="background-card-content">
-              <div class="background-card-top"><span class="background-card-number">02</span><span class="background-card-kicker">Study</span></div>
-              <h3>Education</h3>
-              <p class="background-card-intro">What I am studying and returning to often.</p>
-              <div class="background-card-list">
-                <div class="education-entry">
-                  <div class="education-year"><strong>2024</strong><span>2028</span></div>
-                  <div>
-                    <p class="entry-kicker">Undergraduate degree</p>
-                    <h4>B.Sc. in Computer Science</h4>
-                    <p>Your University</p>
-                    <ul class="mini-tags"><li>Expected June 2028</li><li>GPA / rank here</li></ul>
-                  </div>
-                </div>
-                <div class="education-entry">
-                  <div class="education-year education-year-word">Now</div>
-                  <div>
-                    <p class="entry-kicker">Selected coursework</p>
-                    <h4>Foundations for intelligent systems</h4>
-                    <p>Data Structures · Linear Algebra · Probability · Systems</p>
-                  </div>
-                </div>
-              </div>
+            <div class="cv-rows">
+              <article class="cv-row cv-education-row">
+                <time>2024 — 2028</time>
+                <div><p class="cv-row-label">Undergraduate degree</p><h4>B.Sc. in Computer Science</h4><p>Your University</p><small>Expected June 2028 · GPA / rank here</small></div>
+              </article>
+              <article class="cv-row cv-education-row">
+                <time>In progress</time>
+                <div><p class="cv-row-label">Selected coursework</p><h4>Foundations for intelligent systems</h4><p>Data Structures · Linear Algebra · Probability · Systems</p></div>
+              </article>
             </div>
-          </article>
+          </section>
 
-          <article class="background-card awards-card" id="awards">
-            <div class="background-card-art awards-art" aria-hidden="true">
-              <span class="art-label">Awards / 03</span>
-              <span class="award-ribbon award-ribbon-one"></span><span class="award-ribbon award-ribbon-two"></span>
-              <span class="award-medal"><span>★</span></span>
-              <span class="art-caption">milestones</span>
+          <section class="cv-section" id="awards" aria-labelledby="awards-title">
+            <div class="cv-section-heading">
+              <span class="cv-section-number">03</span>
+              <h3 id="awards-title">Awards</h3>
+              <p>A few milestones from school and open source.</p>
             </div>
-            <div class="background-card-content">
-              <div class="background-card-top"><span class="background-card-number">03</span><span class="background-card-kicker">Recognition</span></div>
-              <h3>Awards</h3>
-              <p class="background-card-intro">A few milestones from school and open source.</p>
-              <div class="background-card-list">
-                <div class="award-entry">
-                  <span class="award-entry-mark">A</span>
-                  <div><time>2026</time><h4>Outstanding Student Project</h4><p>Your University · For Project Atlas</p></div>
-                </div>
-                <div class="award-entry">
-                  <span class="award-entry-mark">B</span>
-                  <div><time>2025</time><h4>Open Source Fellowship</h4><p>Student Developer Program · Selected fellow</p></div>
-                </div>
-                <div class="award-entry">
-                  <span class="award-entry-mark">C</span>
-                  <div><time>2025</time><h4>Dean’s List</h4><p>Your University · Academic distinction</p></div>
-                </div>
-              </div>
+            <div class="cv-award-list">
+              <article class="cv-award-row"><time>2026</time><div><h4>Outstanding Student Project</h4><p>Your University · For Project Atlas</p></div></article>
+              <article class="cv-award-row"><time>2025</time><div><h4>Open Source Fellowship</h4><p>Student Developer Program · Selected fellow</p></div></article>
+              <article class="cv-award-row"><time>2025</time><div><h4>Dean’s List</h4><p>Your University · Academic distinction</p></div></article>
             </div>
-          </article>
+          </section>
         </div>
       </section>
     </main>
@@ -377,6 +335,6 @@
       <p>Last updated <span id="current-year">2026</span> · <a href="#top">Back to top ↑</a></p>
     </footer>
 
-    <script src="script.js?v=9"></script>
+    <script src="script.js?v=10"></script>
   </body>
 </html>

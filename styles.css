@@ -1352,3 +1352,138 @@ h1 em {
     margin-top: 10px;
   }
 }
+
+/* Background: a quieter, CV-like treatment for the long-form details. */
+.background-simple {
+  border-top: 1px solid var(--line);
+}
+
+.cv-section {
+  padding: 56px 0 60px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-section-heading {
+  display: grid;
+  margin-bottom: 36px;
+  align-items: end;
+  grid-template-columns: 88px minmax(210px, .8fr) 1fr;
+  gap: 30px;
+}
+
+.cv-section-number {
+  align-self: start;
+  padding-top: 9px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cv-section-heading h3 {
+  margin: 0;
+  font-size: clamp(37px, 4vw, 56px);
+  letter-spacing: 0;
+}
+
+.cv-section-heading > p {
+  max-width: 470px;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.cv-rows {
+  border-top: 1px solid var(--line);
+}
+
+.cv-row {
+  display: grid;
+  padding: 25px 0 27px;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 30px;
+}
+
+.cv-row > time,
+.cv-award-row > time {
+  padding-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.cv-row-label {
+  margin: 0 0 7px;
+  color: var(--accent) !important;
+  font-size: 12px !important;
+}
+
+.cv-row h4,
+.cv-award-row h4 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.cv-row > div > p:not(.cv-row-label),
+.cv-award-row p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.cv-row small {
+  display: block;
+  max-width: 660px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.cv-award-list {
+  border-top: 1px solid var(--line);
+}
+
+.cv-award-row {
+  display: grid;
+  padding: 25px 0 27px;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 720px) {
+  .cv-section {
+    padding: 42px 0 46px;
+  }
+
+  .cv-section-heading {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .cv-section-number {
+    display: block;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .cv-section-heading > p {
+    margin-top: 14px;
+  }
+
+  .cv-row,
+  .cv-award-row {
+    display: block;
+    padding: 22px 0 24px;
+  }
+
+  .cv-row > time,
+  .cv-award-row > time {
+    display: block;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}

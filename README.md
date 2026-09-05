@@ -23,7 +23,7 @@ python -m http.server 8000
 - `blog.example.com`（替换为独立博客地址，页面里有顶部导航、首屏入口和独立 Blog 横幅三处链接）
 - 三个示例项目、News、Experience 和 Writing
 
-页面分区的推荐顺序是：About / News / Blog 入口 / Selected Work / Background。Background 内部使用三张独立卡片展示 Experience、Education、Awards；宽屏并排，中等屏幕两列，手机单列。Experience 使用带编号和类型标签的经历记录，Education 使用“年份 + 学位 + 学校 + 补充信息”的记录格式，Awards 使用带编号、年份、授予方和说明的条目。这样项目和研究经历是主线，教育背景和奖项作为可信度补充；Blog 则同时有三处入口，便于读者在首屏就找到。
+页面分区的推荐顺序是：About / News / Blog 入口 / Selected Work / Background。Background 使用统一的 CV 风格，不再把 Experience、Education、Awards 做成三种颜色的卡片；每个分区用横向标题栏和年份对齐的记录行呈现，内容变长时只会继续向下展开。这样项目和研究经历是主线，教育背景和奖项作为可信度补充；Blog 则同时有三处入口，便于读者在首屏就找到。
 
 把头像区域的 SVG 替换为自己的图片：
 
