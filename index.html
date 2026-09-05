@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal academic homepage of Your Name, a computer science student interested in intelligent systems and human-centered computing."
+    />
+    <meta name="theme-color" content="#f4f1ea" />
+    <title>Your Name · Computer Science</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=8" />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header wrap">
+      <a class="wordmark" href="#top" aria-label="Back to top">
+        <span>YN</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#work">Work</a>
+        <a href="#background">Background</a>
+        <a class="nav-blog" href="https://blog.example.com" target="_blank" rel="noreferrer">Blog ↗</a>
+        <a href="assets/cv-placeholder.txt" target="_blank">CV</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="about" class="hero wrap reveal" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science · Undergraduate</p>
+          <h1 id="hero-title">Hi, I’m <em>Your Name.</em></h1>
+          <p class="hero-lead">
+            I explore how intelligent systems can become more capable,
+            understandable, and useful to people.
+          </p>
+          <p class="hero-detail">
+            I’m a second-year computer science student at
+            <a href="#">Your University</a>. My current interests include machine
+            learning, computer vision, and human-centered AI. I enjoy turning ideas
+            into small, thoughtful systems that actually work.
+          </p>
+          <div class="hero-links" aria-label="Contact and profiles">
+            <a href="mailto:you@example.com">Email</a>
+            <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="#">Google Scholar ↗</a>
+          </div>
+          <a class="hero-blog-link" href="https://blog.example.com" target="_blank" rel="noreferrer">
+            <span class="hero-blog-kicker">Separate blog</span>
+            <span class="hero-blog-title">Read my notes on research and building things <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+
+        <div class="portrait" aria-label="Replace this illustration with your portrait">
+          <svg viewBox="0 0 420 500" role="img" aria-labelledby="portrait-title">
+            <title id="portrait-title">Abstract portrait placeholder</title>
+            <defs>
+              <linearGradient id="portrait-bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#dfe8dc" />
+                <stop offset="1" stop-color="#9db09a" />
+              </linearGradient>
+            </defs>
+            <rect width="420" height="500" fill="url(#portrait-bg)" />
+            <circle cx="332" cy="86" r="86" fill="#f2c777" opacity=".82" />
+            <path d="M-30 430C68 318 151 342 214 266c50-60 101-66 236-22v275H-30Z" fill="#526a59" />
+            <path d="M116 382c12-88 49-133 100-133s91 45 104 133Z" fill="#f3eee4" />
+            <circle cx="218" cy="191" r="72" fill="#d49b79" />
+            <path d="M150 184c5-66 33-100 77-100 43 0 79 38 74 101-27-30-50-40-72-28-24 13-45 18-79 27Z" fill="#26372f" />
+            <path d="M175 205c23 17 55 17 84-2" fill="none" stroke="#b36f58" stroke-width="4" stroke-linecap="round" />
+          </svg>
+          <span class="portrait-note">your portrait here</span>
+        </div>
+      </section>
+
+      <section id="news" class="section wrap reveal" aria-labelledby="news-title">
+        <div class="section-heading">
+          <p class="section-index">01</p>
+          <h2 id="news-title">News</h2>
+          <p>A short log of what I have been learning, building, and sharing.</p>
+        </div>
+        <div class="news-list">
+          <article>
+            <time datetime="2026-08">Aug 2026</time>
+            <p>Started exploring <strong>your current research topic</strong> with the ABC Lab.</p>
+          </article>
+          <article>
+            <time datetime="2026-06">Jun 2026</time>
+            <p>Released <a href="#project-one">Project Atlas</a>, an open-source visual learning tool.</p>
+          </article>
+          <article>
+            <time datetime="2026-04">Apr 2026</time>
+            <p>Joined a student research program focused on trustworthy machine learning.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blog" class="blog-feature wrap reveal" aria-labelledby="blog-title">
+        <div class="blog-feature-label">
+          <p class="section-index">02</p>
+          <p>Separate blog</p>
+        </div>
+        <div class="blog-feature-main">
+          <h2 id="blog-title">Ideas, notes, and things I’m still figuring out.</h2>
+          <p>
+            Longer explanations, reading notes, and behind-the-scenes details live on
+            the blog. The homepage stays a map; the blog is where I slow down.
+          </p>
+          <a class="blog-feature-link" href="https://blog.example.com" target="_blank" rel="noreferrer">Visit the blog ↗</a>
+        </div>
+        <a class="blog-latest" href="https://blog.example.com" target="_blank" rel="noreferrer">
+          <span class="blog-latest-meta">Latest note · Aug 18, 2026</span>
+          <strong>What I learned from my first research project</strong>
+          <span class="blog-latest-arrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section id="work" class="section wrap reveal" aria-labelledby="work-title">
+        <div class="section-heading work-heading">
+          <div>
+          <p class="section-index">03</p>
+            <h2 id="work-title">Selected work</h2>
+          </div>
+          <p>
+            Research, course projects, and experiments live together here. The
+            distinction matters less than the question and what I learned from it.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <article id="project-one" class="project">
+            <div class="project-visual visual-atlas" aria-hidden="true">
+              <svg viewBox="0 0 720 440">
+                <defs>
+                  <linearGradient id="atlas-bg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#e9dcc4" />
+                    <stop offset="1" stop-color="#8da397" />
+                  </linearGradient>
+                </defs>
+                <rect width="720" height="440" fill="url(#atlas-bg)" />
+                <g fill="none" stroke="#344c40" stroke-width="2" opacity=".8">
+                  <path d="M72 315C177 87 324 404 438 166c47-97 118-70 211 25" />
+                  <path d="M50 355C184 168 320 429 466 224c49-69 112-63 209 12" opacity=".45" />
+                </g>
+                <g fill="#f8f3e9" stroke="#344c40" stroke-width="3">
+                  <circle cx="112" cy="250" r="22" /><circle cx="252" cy="270" r="30" />
+                  <circle cx="402" cy="215" r="24" /><circle cx="541" cy="125" r="34" />
+                  <circle cx="626" cy="201" r="18" />
+                </g>
+                <text x="52" y="68" fill="currentColor" font-size="26" font-family="sans-serif">ATLAS / 01</text>
+              </svg>
+            </div>
+            <div class="project-copy">
+              <div class="project-meta">
+                <span>Independent project</span><span>2026</span>
+              </div>
+              <h3>Project Atlas</h3>
+              <p class="project-subtitle">Making high-dimensional learning paths easier to see.</p>
+              <p>
+                An interactive system that turns a collection of notes and resources
+                into an explorable knowledge map. I designed the interface and built
+                the retrieval and visualization pipeline.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>TypeScript</li><li>Embeddings</li><li>Data visualization</li>
+              </ul>
+              <div class="project-links">
+                <a href="#">Code ↗</a><a href="#">Demo ↗</a><a href="#">Notes ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-reverse">
+            <div class="project-visual visual-field" aria-hidden="true">
+              <svg viewBox="0 0 720 440">
+                <rect width="720" height="440" fill="#dbe3df" />
+                <g transform="translate(360 220)">
+                  <g fill="none" stroke="#536b61" stroke-width="1.6" opacity=".65">
+                    <ellipse rx="220" ry="72" transform="rotate(18)" />
+                    <ellipse rx="220" ry="72" transform="rotate(78)" />
+                    <ellipse rx="220" ry="72" transform="rotate(138)" />
+                  </g>
+                  <circle r="64" fill="#344c40" />
+                  <circle cx="-154" cy="-69" r="16" fill="#d58a64" />
+                  <circle cx="160" cy="67" r="12" fill="#e7b85e" />
+                  <circle cx="-18" cy="-207" r="10" fill="#f7f2e8" stroke="#344c40" stroke-width="3" />
+                </g>
+                <text x="52" y="68" fill="currentColor" font-size="26" font-family="sans-serif">FIELD / 02</text>
+              </svg>
+            </div>
+            <div class="project-copy">
+              <div class="project-meta">
+                <span>Course research</span><span>2026</span>
+              </div>
+              <h3>Latent Field</h3>
+              <p class="project-subtitle">Understanding what a small vision model pays attention to.</p>
+              <p>
+                A compact interpretability study comparing attribution methods on an
+                image classifier, with a reproducible experiment dashboard and a
+                careful analysis of failure cases.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>PyTorch</li><li>Computer vision</li><li>Interpretability</li>
+              </ul>
+              <div class="project-links">
+                <a href="#">Code ↗</a><a href="#">Report ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-visual visual-room" aria-hidden="true">
+              <svg viewBox="0 0 720 440">
+                <rect width="720" height="440" fill="#e6d9cf" />
+                <path d="M0 355 344 134l376 210v96H0Z" fill="#bf765b" />
+                <path d="m344 134 376 210-360 5L0 355Z" fill="#e9b873" />
+                <path d="m344 134 16 215L0 355Z" fill="#9cae99" />
+                <rect x="335" y="246" width="104" height="103" rx="2" fill="#f6f1e8" />
+                <circle cx="387" cy="297" r="18" fill="#344c40" />
+                <text x="52" y="68" fill="currentColor" font-size="26" font-family="sans-serif">ROOM / 03</text>
+              </svg>
+            </div>
+            <div class="project-copy">
+              <div class="project-meta">
+                <span>Team project</span><span>2025</span>
+              </div>
+              <h3>Room for Thought</h3>
+              <p class="project-subtitle">A calmer interface for collaborative reading.</p>
+              <p>
+                A browser-based reading room for small study groups. It connects
+                annotations to conversation without turning the page into a noisy
+                social feed.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>React</li><li>WebSocket</li><li>Interaction design</li>
+              </ul>
+              <div class="project-links">
+                <a href="#">Code ↗</a><a href="#">Case study ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="background" class="background-section wrap reveal" aria-labelledby="background-title">
+        <div class="background-heading">
+          <p class="section-index">04</p>
+          <h2 id="background-title">Background</h2>
+          <p>A concise record of the places, people, and opportunities that have shaped my work so far.</p>
+        </div>
+
+        <div class="background-card-grid">
+          <article class="background-card experience-card" id="experience">
+            <div class="background-card-art experience-art" aria-hidden="true">
+              <span class="art-label">FIELD / 01</span>
+              <span class="art-route art-route-one"></span><span class="art-route art-route-two"></span>
+              <span class="art-node art-node-one">01</span><span class="art-node art-node-two">02</span><span class="art-node art-node-three">03</span>
+              <span class="art-caption">WORK IN PROGRESS</span>
+            </div>
+            <div class="background-card-content">
+              <div class="background-card-top"><span class="background-card-number">01</span><span class="background-card-kicker">Practice</span></div>
+              <h3>Experience</h3>
+              <p class="background-card-intro">The places where I have tried ideas in the real world.</p>
+              <div class="background-card-list">
+                <div class="background-entry">
+                  <div class="entry-meta"><time>2026 — now</time><span>Research</span></div>
+                  <h4>Student Researcher</h4>
+                  <p>ABC Lab · Your University</p>
+                  <small>Exploring trustworthy machine learning with a small research team.</small>
+                </div>
+                <div class="background-entry">
+                  <div class="entry-meta"><time>2025 — now</time><span>Community</span></div>
+                  <h4>Developer</h4>
+                  <p>Open Source Club</p>
+                  <small>Building tools and helping other students make their first contribution.</small>
+                </div>
+                <div class="background-entry">
+                  <div class="entry-meta"><time>2025</time><span>Teaching</span></div>
+                  <h4>Peer Mentor</h4>
+                  <p>Department of Computer Science</p>
+                  <small>Supported sessions on programming fundamentals and data structures.</small>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="background-card education-card" id="education">
+            <div class="background-card-art education-art" aria-hidden="true">
+              <span class="art-label">STUDY / 02</span>
+              <span class="edu-arch"></span><span class="edu-page edu-page-one"></span><span class="edu-page edu-page-two"></span>
+              <span class="edu-dot edu-dot-one"></span><span class="edu-dot edu-dot-two"></span><span class="edu-dot edu-dot-three"></span>
+              <span class="art-caption">FOUNDATIONS</span>
+            </div>
+            <div class="background-card-content">
+              <div class="background-card-top"><span class="background-card-number">02</span><span class="background-card-kicker">Study</span></div>
+              <h3>Education</h3>
+              <p class="background-card-intro">A snapshot of the foundations behind the work.</p>
+              <div class="background-card-list">
+                <div class="education-entry">
+                  <div class="education-year"><strong>2024</strong><span>2028</span></div>
+                  <div>
+                    <p class="entry-kicker">Undergraduate degree</p>
+                    <h4>B.Sc. in Computer Science</h4>
+                    <p>Your University</p>
+                    <ul class="mini-tags"><li>Expected June 2028</li><li>GPA / rank here</li></ul>
+                  </div>
+                </div>
+                <div class="education-entry">
+                  <div class="education-year education-year-word">Now</div>
+                  <div>
+                    <p class="entry-kicker">Selected coursework</p>
+                    <h4>Foundations for intelligent systems</h4>
+                    <p>Data Structures · Linear Algebra · Probability · Systems</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="background-card awards-card" id="awards">
+            <div class="background-card-art awards-art" aria-hidden="true">
+              <span class="art-label">HONORS / 03</span>
+              <span class="award-ribbon award-ribbon-one"></span><span class="award-ribbon award-ribbon-two"></span>
+              <span class="award-medal"><span>★</span></span>
+              <span class="art-caption">SMALL WINS</span>
+            </div>
+            <div class="background-card-content">
+              <div class="background-card-top"><span class="background-card-number">03</span><span class="background-card-kicker">Recognition</span></div>
+              <h3>Awards</h3>
+              <p class="background-card-intro">A few milestones worth keeping visible.</p>
+              <div class="background-card-list">
+                <div class="award-entry">
+                  <span class="award-entry-mark">A</span>
+                  <div><time>2026</time><h4>Outstanding Student Project</h4><p>Your University · For Project Atlas</p></div>
+                </div>
+                <div class="award-entry">
+                  <span class="award-entry-mark">B</span>
+                  <div><time>2025</time><h4>Open Source Fellowship</h4><p>Student Developer Program · Selected fellow</p></div>
+                </div>
+                <div class="award-entry">
+                  <span class="award-entry-mark">C</span>
+                  <div><time>2025</time><h4>Dean’s List</h4><p>Your University · Academic distinction</p></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <p>Designed and built by Your Name.</p>
+      <p>Last updated <span id="current-year">2026</span> · <a href="#top">Back to top ↑</a></p>
+    </footer>
+
+    <script src="script.js?v=8"></script>
+  </body>
+</html>
