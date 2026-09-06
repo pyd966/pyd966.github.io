@@ -35,13 +35,17 @@ python -m http.server 8000
 
 ## GitHub Pages 部署
 
-将 `personal-homepage` 作为独立仓库推送到 GitHub。随后在仓库的 **Settings → Pages** 中选择：
+将 `personal-homepage` 作为独立仓库推送到 GitHub。推荐仓库名使用：
 
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/ (root)`
+```text
+yourname.github.io
+```
 
-个人主页可以使用 `yourname.github.io`，博客继续部署在单独仓库，并绑定到 `blog.your-domain.com`。主页只通过链接跳转到博客。
+仓库已经包含 `.github/workflows/pages.yml`。推送到 `main` 后，Actions 会自动上传并发布静态文件。
+
+首次配置时，在仓库的 **Settings → Pages** 中将 **Source** 设置为 **GitHub Actions**。之后每次推送到 `main` 都会自动部署。
+
+博客继续部署在单独仓库，并通过主页中的 Blog 链接跳转。若使用自定义域名，可以在 GitHub Pages 设置中绑定域名，并将 DNS 指向 GitHub Pages。
 
 ## 文件结构
 
@@ -50,6 +54,9 @@ personal-homepage/
 ├── assets/
 │   ├── favicon.svg
 │   └── cv-placeholder.txt
+├── .github/
+│   └── workflows/pages.yml
+├── .gitignore
 ├── index.html
 ├── styles.css
 ├── script.js
