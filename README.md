@@ -19,8 +19,8 @@ python -m http.server 8000
 - `Your Name`、`YN`
 - `Your University`、`ABC Lab`
 - `you@example.com`
-- `github.com/yourname`
-- `blog.example.com`（替换为独立博客地址，页面里有顶部导航、首屏入口和独立 Blog 横幅三处链接）
+- `github.com/pyd966`
+- `pyd966.github.io/blog/`（页面里有顶部导航、首屏入口和独立 Blog 横幅三处链接）
 - 三个示例项目、News、Experience 和 Writing
 
 页面分区的推荐顺序是：About / News / Blog 入口 / Selected Work / Background。Background 使用统一的 CV 风格，不再把 Experience、Education、Awards 做成三种颜色的卡片；每个分区用横向标题栏和年份对齐的记录行呈现，内容变长时只会继续向下展开。这样项目和研究经历是主线，教育背景和奖项作为可信度补充；Blog 则同时有三处入口，便于读者在首屏就找到。
@@ -38,14 +38,14 @@ python -m http.server 8000
 将 `personal-homepage` 作为独立仓库推送到 GitHub。推荐仓库名使用：
 
 ```text
-yourname.github.io
+pyd966.github.io
 ```
 
 仓库已经包含 `.github/workflows/pages.yml`。推送到 `main` 后，Actions 会自动上传并发布静态文件。
 
 首次配置时，在仓库的 **Settings → Pages** 中将 **Source** 设置为 **GitHub Actions**。之后每次推送到 `main` 都会自动部署。
 
-博客继续部署在单独仓库，并通过主页中的 Blog 链接跳转。若使用自定义域名，可以在 GitHub Pages 设置中绑定域名，并将 DNS 指向 GitHub Pages。
+博客继续部署在单独仓库，并通过主页中的 Blog 链接跳转。当前博客地址为 `pyd966.github.io/blog/`。
 
 ## 文件结构
 
