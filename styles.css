@@ -1,49 +1,49 @@
 :root {
   color-scheme: light;
-  --paper: #ffffff;
-  --paper-soft: #f6f8fa;
-  --ink: #202b36;
-  --muted: #5e6b75;
-  --line: #dce2e7;
-  --accent: #1769aa;
-  --accent-soft: #eef5fb;
-  --warm: #6a7480;
-  --art-experience: #e3edf4;
-  --art-education: #edf0f3;
-  --art-awards: #f0eee7;
+  --paper: #f4f1ea;
+  --paper-soft: #ebe7de;
+  --ink: #233128;
+  --muted: #657068;
+  --line: #cfcfc4;
+  --accent: #55715e;
+  --accent-soft: #dce4da;
+  --warm: #be7458;
+  --art-experience: #d8e2d8;
+  --art-education: #e6d9ce;
+  --art-awards: #ead9ae;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
   --serif: ui-serif, Georgia, "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #12171c;
-  --paper-soft: #1c242b;
-  --ink: #edf2f5;
-  --muted: #aab7c1;
-  --line: #36424b;
-  --accent: #7fb4e0;
-  --accent-soft: #203646;
-  --warm: #d3a58e;
-  --art-experience: #253541;
-  --art-education: #30363c;
-  --art-awards: #3d392d;
+  --paper: #141b17;
+  --paper-soft: #202a24;
+  --ink: #f1f4ed;
+  --muted: #b7c1b9;
+  --line: #435148;
+  --accent: #b6d5bc;
+  --accent-soft: #304538;
+  --warm: #efaa8e;
+  --art-experience: #293a30;
+  --art-education: #3a2d2b;
+  --art-awards: #413622;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --paper: #12171c;
-    --paper-soft: #1c242b;
-    --ink: #edf2f5;
-    --muted: #aab7c1;
-    --line: #36424b;
-    --accent: #7fb4e0;
-    --accent-soft: #203646;
-    --warm: #d3a58e;
-    --art-experience: #253541;
-    --art-education: #30363c;
-    --art-awards: #3d392d;
+    --paper: #141b17;
+    --paper-soft: #202a24;
+    --ink: #f1f4ed;
+    --muted: #b7c1b9;
+    --line: #435148;
+    --accent: #b6d5bc;
+    --accent-soft: #304538;
+    --warm: #efaa8e;
+    --art-experience: #293a30;
+    --art-education: #3a2d2b;
+    --art-awards: #413622;
   }
 }
 
@@ -127,20 +127,11 @@ a {
 }
 
 .site-header {
-  width: 100%;
-  max-width: none;
-  min-height: 72px;
-  padding-inline: max(32px, calc((100% - 1160px) / 2));
+  min-height: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0;
-  background: #1769aa;
-  color: #fff;
-}
-
-:root[data-theme="dark"] .site-header {
-  background: #0e416d;
+  border-bottom: 1px solid var(--line);
 }
 
 .wordmark {
@@ -152,12 +143,12 @@ a {
   width: 42px;
   height: 42px;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, .76);
+  border: 1px solid var(--ink);
   border-radius: 50%;
   font-family: var(--serif);
   font-size: 17px;
   line-height: 1;
-  color: #fff;
+  color: var(--ink);
 }
 
 .site-nav {
@@ -167,7 +158,7 @@ a {
 }
 
 .site-nav a {
-  color: #fff;
+  color: var(--ink);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
@@ -188,7 +179,7 @@ a {
 }
 
 .site-nav .nav-blog {
-  color: #e7f3ff;
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -198,7 +189,7 @@ a {
   padding: 0;
   border: 0;
   background: transparent;
-  color: #fff;
+  color: var(--ink);
   cursor: pointer;
   place-items: center;
 }
@@ -206,7 +197,7 @@ a {
 .theme-toggle {
   width: 34px;
   height: 34px;
-  border: 1px solid rgba(255, 255, 255, .55);
+  border: 1px solid var(--line);
   border-radius: 50%;
 }
 
@@ -244,8 +235,8 @@ a {
 
 .hero {
   display: grid;
-  min-height: 0;
-  padding-block: 78px 86px;
+  min-height: 680px;
+  padding-block: 82px 96px;
   align-items: center;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, .62fr);
   gap: clamp(56px, 9vw, 128px);
@@ -347,9 +338,8 @@ h1 em {
   width: min(100%, 560px);
   padding: 17px 20px 18px;
   margin-top: 38px;
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--accent);
-  background: var(--paper);
+  border-left: 2px solid var(--accent);
+  background: color-mix(in srgb, var(--accent-soft), transparent 18%);
   flex-direction: column;
   gap: 4px;
   text-decoration: none;
@@ -358,8 +348,7 @@ h1 em {
 
 .hero-blog-link:hover {
   border-color: var(--warm);
-  border-left-color: var(--accent);
-  background: var(--paper-soft);
+  background: var(--accent-soft);
 }
 
 .hero-blog-kicker,
@@ -525,7 +514,7 @@ h1 em {
   min-height: 170px;
   padding: 25px 30px 25px 25px;
   border-left: 1px solid var(--line);
-  background: var(--paper);
+  background: var(--paper-soft);
   flex-direction: column;
   justify-content: space-between;
   text-decoration: none;
@@ -533,7 +522,7 @@ h1 em {
 }
 
 .blog-latest:hover {
-  background: var(--paper-soft);
+  background: var(--accent-soft);
 }
 
 .blog-latest-meta {
@@ -1178,11 +1167,7 @@ h1 em {
 
   .site-header {
     position: relative;
-    width: 100%;
-    max-width: none;
-    margin: 0;
     min-height: 86px;
-    padding-inline: 18px;
   }
 
   .menu-toggle {
