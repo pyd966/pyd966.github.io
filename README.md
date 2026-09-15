@@ -17,7 +17,7 @@ python -m http.server 8000
 在 `index.html` 中搜索并替换：
 
 - `Your Name`、`YN`
-- `Your University`、`ABC Lab`
+- `Zhejiang University`、`ZIP Lab`（https://ziplab.co/）
 - `pyd966@gmail.com`
 - `github.com/pyd966`
 - `pyd966.github.io/blog/`（页面里有顶部导航、首屏入口和独立 Blog 横幅三处链接）
