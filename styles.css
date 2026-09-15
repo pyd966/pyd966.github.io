@@ -400,19 +400,6 @@ h1 em {
   filter: saturate(.8);
 }
 
-.portrait-note {
-  position: absolute;
-  right: -17px;
-  bottom: 36px;
-  padding: 7px 12px;
-  background: var(--paper);
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 12px;
-  font-style: normal;
-  transform: none;
-}
-
 .section {
   padding-block: 105px;
   border-top: 1px solid var(--line);
@@ -465,6 +452,14 @@ h1 em {
 
 .news-list p {
   margin: 0;
+}
+
+.empty-state {
+  padding: 22px 4px;
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .blog-feature {
@@ -567,6 +562,10 @@ h1 em {
 .project-list {
   display: grid;
   gap: 0;
+}
+
+.project-list > .empty-state {
+  padding-block: 26px;
 }
 
 .project {

@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#f4f1ea" />
     <title>Yiduo Pang · Computer Science</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=14" />
+    <link rel="stylesheet" href="styles.css?v=15" />
     <script>
       const savedTheme = localStorage.getItem("theme");
       if (savedTheme === "dark" || savedTheme === "light") {
@@ -37,7 +37,6 @@
         <a href="#work">Work</a>
         <a href="#background">Background</a>
         <a class="nav-blog" href="https://pyd966.github.io/blog/" target="_blank" rel="noreferrer">Blog ↗</a>
-        <a href="assets/cv-placeholder.txt" target="_blank">CV</a>
         <button class="theme-toggle" type="button" aria-label="Switch color theme">
           <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="4"></circle>
@@ -78,9 +77,9 @@
           </a>
         </div>
 
-        <div class="portrait" aria-label="Replace this illustration with your portrait">
+        <div class="portrait" aria-label="Abstract portrait illustration">
           <svg viewBox="0 0 420 500" role="img" aria-labelledby="portrait-title">
-            <title id="portrait-title">Abstract portrait placeholder</title>
+            <title id="portrait-title">Abstract portrait illustration</title>
             <defs>
               <linearGradient id="portrait-bg" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stop-color="#dfe8dc" />
@@ -95,7 +94,6 @@
             <path d="M150 184c5-66 33-100 77-100 43 0 79 38 74 101-27-30-50-40-72-28-24 13-45 18-79 27Z" fill="#26372f" />
             <path d="M175 205c23 17 55 17 84-2" fill="none" stroke="#b36f58" stroke-width="4" stroke-linecap="round" />
           </svg>
-          <span class="portrait-note">your portrait here</span>
         </div>
       </section>
 
@@ -106,18 +104,7 @@
           <p>A short log of what I have been learning, building, and sharing.</p>
         </div>
         <div class="news-list">
-          <article>
-            <time datetime="2026-08">Aug 2026</time>
-            <p>Started exploring <strong>your current research topic</strong> with the ABC Lab.</p>
-          </article>
-          <article>
-            <time datetime="2026-06">Jun 2026</time>
-            <p>Released <a href="#project-one">Project Atlas</a>, an open-source visual learning tool.</p>
-          </article>
-          <article>
-            <time datetime="2026-04">Apr 2026</time>
-            <p>Joined a student research program focused on trustworthy machine learning.</p>
-          </article>
+          <p class="empty-state">Updates will appear here as projects become public.</p>
         </div>
       </section>
 
@@ -135,8 +122,8 @@
           <a class="blog-feature-link" href="https://pyd966.github.io/blog/" target="_blank" rel="noreferrer">Visit the blog ↗</a>
         </div>
         <a class="blog-latest" href="https://pyd966.github.io/blog/" target="_blank" rel="noreferrer">
-          <span class="blog-latest-meta">Latest note · Aug 18, 2026</span>
-          <strong>What I learned from my first research project</strong>
+          <span class="blog-latest-meta">pyd966.github.io/blog</span>
+          <strong>Notes on research, systems, and things I want to remember.</strong>
           <span class="blog-latest-arrow" aria-hidden="true">↗</span>
         </a>
       </section>
@@ -144,127 +131,17 @@
       <section id="work" class="section wrap reveal" aria-labelledby="work-title">
         <div class="section-heading work-heading">
           <div>
-          <p class="section-index">03</p>
+            <p class="section-index">03</p>
             <h2 id="work-title">Selected work</h2>
           </div>
           <p>
-            A selection of research, course projects, and experiments. Each one
-            started with a small question and ended with something I could share.
+            Public projects, research, and experiments will be collected here as
+            they become ready to share.
           </p>
         </div>
 
         <div class="project-list">
-          <article id="project-one" class="project">
-            <div class="project-visual visual-atlas" aria-hidden="true">
-              <svg viewBox="0 0 720 440">
-                <defs>
-                  <linearGradient id="atlas-bg" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#e9dcc4" />
-                    <stop offset="1" stop-color="#8da397" />
-                  </linearGradient>
-                </defs>
-                <rect width="720" height="440" fill="url(#atlas-bg)" />
-                <g fill="none" stroke="#344c40" stroke-width="2" opacity=".8">
-                  <path d="M72 315C177 87 324 404 438 166c47-97 118-70 211 25" />
-                  <path d="M50 355C184 168 320 429 466 224c49-69 112-63 209 12" opacity=".45" />
-                </g>
-                <g fill="#f8f3e9" stroke="#344c40" stroke-width="3">
-                  <circle cx="112" cy="250" r="22" /><circle cx="252" cy="270" r="30" />
-                  <circle cx="402" cy="215" r="24" /><circle cx="541" cy="125" r="34" />
-                  <circle cx="626" cy="201" r="18" />
-                </g>
-                <text x="52" y="68" fill="currentColor" font-size="26" font-family="sans-serif">Atlas / 01</text>
-              </svg>
-            </div>
-            <div class="project-copy">
-              <div class="project-meta">
-                <span>Independent project</span><span>2026</span>
-              </div>
-              <h3>Project Atlas</h3>
-              <p class="project-subtitle">Making high-dimensional learning paths easier to see.</p>
-              <p>
-                An interactive system that turns a collection of notes and resources
-                into an explorable knowledge map. I designed the interface and built
-                the retrieval and visualization pipeline.
-              </p>
-              <ul class="tag-list" aria-label="Technologies">
-                <li>TypeScript</li><li>Embeddings</li><li>Data visualization</li>
-              </ul>
-              <div class="project-links">
-                <a href="#">Code ↗</a><a href="#">Demo ↗</a><a href="#">Notes ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project project-reverse">
-            <div class="project-visual visual-field" aria-hidden="true">
-              <svg viewBox="0 0 720 440">
-                <rect width="720" height="440" fill="#dbe3df" />
-                <g transform="translate(360 220)">
-                  <g fill="none" stroke="#536b61" stroke-width="1.6" opacity=".65">
-                    <ellipse rx="220" ry="72" transform="rotate(18)" />
-                    <ellipse rx="220" ry="72" transform="rotate(78)" />
-                    <ellipse rx="220" ry="72" transform="rotate(138)" />
-                  </g>
-                  <circle r="64" fill="#344c40" />
-                  <circle cx="-154" cy="-69" r="16" fill="#d58a64" />
-                  <circle cx="160" cy="67" r="12" fill="#e7b85e" />
-                  <circle cx="-18" cy="-207" r="10" fill="#f7f2e8" stroke="#344c40" stroke-width="3" />
-                </g>
-                <text x="52" y="68" fill="currentColor" font-size="26" font-family="sans-serif">Field / 02</text>
-              </svg>
-            </div>
-            <div class="project-copy">
-              <div class="project-meta">
-                <span>Course research</span><span>2026</span>
-              </div>
-              <h3>Latent Field</h3>
-              <p class="project-subtitle">Understanding what a small vision model pays attention to.</p>
-              <p>
-                A compact interpretability study comparing attribution methods on an
-                image classifier, with a reproducible experiment dashboard and a
-                careful analysis of failure cases.
-              </p>
-              <ul class="tag-list" aria-label="Technologies">
-                <li>PyTorch</li><li>Computer vision</li><li>Interpretability</li>
-              </ul>
-              <div class="project-links">
-                <a href="#">Code ↗</a><a href="#">Report ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-visual visual-room" aria-hidden="true">
-              <svg viewBox="0 0 720 440">
-                <rect width="720" height="440" fill="#e6d9cf" />
-                <path d="M0 355 344 134l376 210v96H0Z" fill="#bf765b" />
-                <path d="m344 134 376 210-360 5L0 355Z" fill="#e9b873" />
-                <path d="m344 134 16 215L0 355Z" fill="#9cae99" />
-                <rect x="335" y="246" width="104" height="103" rx="2" fill="#f6f1e8" />
-                <circle cx="387" cy="297" r="18" fill="#344c40" />
-                <text x="52" y="68" fill="currentColor" font-size="26" font-family="sans-serif">Room / 03</text>
-              </svg>
-            </div>
-            <div class="project-copy">
-              <div class="project-meta">
-                <span>Team project</span><span>2025</span>
-              </div>
-              <h3>Room for Thought</h3>
-              <p class="project-subtitle">A calmer interface for collaborative reading.</p>
-              <p>
-                A browser-based reading room for small study groups. It connects
-                annotations to conversation without turning the page into a noisy
-                social feed.
-              </p>
-              <ul class="tag-list" aria-label="Technologies">
-                <li>React</li><li>WebSocket</li><li>Interaction design</li>
-              </ul>
-              <div class="project-links">
-                <a href="#">Code ↗</a><a href="#">Case study ↗</a>
-              </div>
-            </div>
-          </article>
+          <p class="empty-state">Public projects and research will be added here.</p>
         </div>
       </section>
 
@@ -283,18 +160,7 @@
               <p>Places where I have worked with other people.</p>
             </div>
             <div class="cv-rows">
-              <article class="cv-row">
-                <time>2026 — now</time>
-                <div><p class="cv-row-label">Research</p><h4>Student Researcher</h4><p>ABC Lab · Your University</p><small>Exploring trustworthy machine learning with a small research team.</small></div>
-              </article>
-              <article class="cv-row">
-                <time>2025 — now</time>
-                <div><p class="cv-row-label">Community</p><h4>Developer</h4><p>Open Source Club</p><small>Building tools and helping other students make their first contribution.</small></div>
-              </article>
-              <article class="cv-row">
-                <time>2025</time>
-                <div><p class="cv-row-label">Teaching</p><h4>Peer Mentor</h4><p>Department of Computer Science</p><small>Supported sessions on programming fundamentals and data structures.</small></div>
-              </article>
+              <p class="empty-state">Details will be added when current work is ready to share.</p>
             </div>
           </section>
 
@@ -309,10 +175,6 @@
                 <time>Year 2</time>
                 <div><p class="cv-row-label">Undergraduate degree</p><h4>Computer Science</h4><p>Zhejiang University</p><small>Second-year undergraduate</small></div>
               </article>
-              <article class="cv-row cv-education-row">
-                <time>In progress</time>
-                <div><p class="cv-row-label">Selected coursework</p><h4>Foundations for intelligent systems</h4><p>Data Structures · Linear Algebra · Probability · Systems</p></div>
-              </article>
             </div>
           </section>
 
@@ -320,12 +182,10 @@
             <div class="cv-section-heading">
               <span class="cv-section-number">03</span>
               <h3 id="awards-title">Awards</h3>
-              <p>A few milestones from school and open source.</p>
+              <p>Milestones will be listed here when there are any to share.</p>
             </div>
             <div class="cv-award-list">
-              <article class="cv-award-row"><time>2026</time><div><h4>Outstanding Student Project</h4><p>Your University · For Project Atlas</p></div></article>
-              <article class="cv-award-row"><time>2025</time><div><h4>Open Source Fellowship</h4><p>Student Developer Program · Selected fellow</p></div></article>
-              <article class="cv-award-row"><time>2025</time><div><h4>Dean’s List</h4><p>Your University · Academic distinction</p></div></article>
+              <p class="empty-state">No entries yet.</p>
             </div>
           </section>
         </div>

@@ -1,3 +1,0 @@
-CV placeholder
-
-Replace this file with your own PDF named cv.pdf, then update the CV link in index.html.
