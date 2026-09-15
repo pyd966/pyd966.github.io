@@ -18,7 +18,7 @@ python -m http.server 8000
 
 - `Your Name`、`YN`
 - `Your University`、`ABC Lab`
-- `you@example.com`
+- `pyd966@gmail.com`
 - `github.com/pyd966`
 - `pyd966.github.io/blog/`（页面里有顶部导航、首屏入口和独立 Blog 横幅三处链接）
 - 三个示例项目、News、Experience 和 Writing
